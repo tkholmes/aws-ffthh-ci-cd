@@ -1,0 +1,27 @@
+{
+  "name": "aws-ffthh-ci-cd",
+  "version": "1.0.0",
+  "description": "Sample repo to illustrate CodeBuild/Pipeline for FFTHH",
+  "scripts": {
+    "local": "npm run build && http-server dist/",
+    "test": "node spec/jasmine-boot.js",
+    "build": "npm run test && mkdir -p dist && cp -av src/* dist/ && cp node_modules/jquery/dist/jquery.min.js ./dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkholmes/aws-ffthh-ci-cd.git"
+  },
+  "author": "Tyler Holmes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkholmes/aws-ffthh-ci-cd/issues"
+  },
+  "homepage": "https://github.com/tkholmes/aws-ffthh-ci-cd#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "jasmine": "^2.9.0",
+    "jasmine-console-reporter": "^2.0.1"
+  }
+}
