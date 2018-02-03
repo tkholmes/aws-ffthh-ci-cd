@@ -9,7 +9,7 @@ var game = new Phaser.Game(width, height, Phaser.AUTO, 'aws-serverless-samfarm',
 });
 
 var sprites;
-var DESIRED_SAM_COUNT = 1;
+var DESIRED_SAM_COUNT = 152;
 
 function preload() {
     game.load.spritesheet('spinner', 'squirrel.png', 64, 64);
